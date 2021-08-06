@@ -1,0 +1,489 @@
+body {
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+
+#logo {
+    max-width: 5vh;
+    display: flex;
+   
+}
+
+
+.img-logo {
+    display: flex;
+    align-items: center; 
+    padding-left: 30px;
+    flex-direction: row;   
+    
+}
+
+
+.img-logo h1 {
+    font-size: 30px;
+    padding-left: 10px;
+    font-family: 'Dosis', sans-serif;
+    color: #fc6f58;
+    
+}
+
+.nav-logo {
+   display: flex; 
+   flex-direction: row;
+   
+}
+
+#partner-container {
+    padding: 12px;
+    width: 100vh;
+    height: 50vh;
+    border-radius: 1em;
+    position: relative;
+    
+}
+
+
+#my-partner img {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    margin: 0;
+    width: 100vh;
+    height: 50vh;
+    border-radius: 1em;
+    border: 1em solid rgb(40, 42, 46);
+
+}
+
+.overlay {
+    position: absolute;
+    padding: 0;
+    top: 10%;
+    bottom: 0;
+    left: 51%;
+    right: 0;
+    margin: 0;
+    height: 51vh;
+    width: 101vh;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(40, 42, 46);
+  }
+
+#partner-container:hover .overlay {
+    opacity: 75%;
+  }
+
+.text a {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 75%;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    text-decoration: none;
+
+  }
+
+
+#reset-color {
+    display:inline-block;
+    justify-content: center;
+    padding:0;
+    border:0.1em solid #FF3D49;;
+    margin-left: 30px;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Dosis', sans-serif;
+    font-weight:600;
+    color:#FF3D49;;
+    text-align:center;
+    transition: all 0.2s; 
+    width:  3.5em;;
+}
+
+#reset-color:hover{
+    color:#fd0010;
+    background-color:#d3d3d3;
+    }
+
+h2 {
+    padding-left: 30px;
+    font-family: 'Dosis', sans-serif;
+}
+
+#featured-heading {
+    font-family: 'Dosis', sans-serif;
+    font-size: 40px;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+
+.featured-games img {
+    object-fit: cover;
+    width: 40vh;
+    height: 35vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.featured-games {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 20vh;
+}
+
+.game_card{
+    background-color: #282A2E;
+    padding: 0 !important;
+    max-width: 40vh;
+    margin:30px; 
+    border-radius: 10px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+    
+    
+  }
+
+.game_card p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Dosis', sans-serif;
+  }
+
+
+.game_card a {
+    border-radius: 100%;
+    border: none;
+    background-color: #FF3D49;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(235, 231, 231);
+    margin: auto;
+    cursor: pointer;
+    float: right;
+    text-decoration: none;
+
+}
+
+.button_container {
+    padding-right: 10px;  
+}
+
+.button_container a:hover {
+    background-color: #fd0010;
+}
+/* Review */
+
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    color: #000;
+}
+
+
+#review_heading {
+    margin:30px;
+    font-size: 2.5em; 
+}
+
+.featured-review {
+    max-width: 100%;
+}
+
+
+.review_card{
+    padding-top: 0.7em;
+    padding-bottom: 2em;
+    max-width: 100vh;
+    margin:30px; 
+    border-radius: 10px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.review_card p {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: 'Dosis', sans-serif;
+}
+
+.square_rating {
+    display: inline-block;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: #6c3;
+    margin-left: 1em;
+    border-radius: 0.5em;
+
+}
+
+.rating  {
+    color: #fff;
+    font-weight: bold;
+}
+
+form {
+    font-family: 'Dosis', sans-serif;
+    padding-left: 1em;
+}
+
+
+
+#display_rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: #6c3;
+    border-radius: 0.5em;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 0em !important;
+    
+}
+
+.username {
+    font-weight: 700;
+}
+
+#pokemon-heading {
+    display: flex;
+    flex-direction: row;
+}
+
+#pokemon-heading h1 {
+    color: #fff;
+    padding-left: 30px;
+    font-size:  50px;
+}
+
+#pokemon-logo {
+    width: 2em;
+    height: 2em;
+    
+}
+
+.pokemon {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+.pokemon img {
+    display: block;
+}
+
+/* iPhone 6/7/8 size screen */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #logo {
+        max-width: 4vh;
+        display: flex;
+       
+    }
+
+    #partner-container {
+        padding: 0px;
+        width: 100vh;
+        height: 50vh;
+        border-radius: 1em;
+        position: relative;
+        
+    }
+    
+    
+    #my-partner img {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        margin: 0;
+        width: 70vh;
+        height: 40vh;
+        border-radius: 1em;
+        border: 1em solid rgb(40, 42, 46);
+
+    }
+
+    .overlay {
+        position: absolute;
+        padding: 0;
+        top: 0%;
+        bottom: 0;
+        left: 0%;
+        right: 0;
+        margin: 0;
+        height: 43vh;
+        width: 73vh;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgb(40, 42, 46);
+        }
+        
+    #partner-container:hover .overlay {
+        opacity: 75%;
+        }
+        
+    .text a {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        opacity: 75%;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 700;
+        font-size: 3em;
+        text-decoration: none;
+        
+          }
+    
+ 
+
+    .featured-games img {
+        object-fit: cover;
+        width: 40vh;
+        height: 35vh;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+
+    .featured-games {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+        align-content: center;
+
+
+        
+    }  
+    
+    .game_card{
+        padding: 0;
+        width: 60vh;
+        margin:20px; 
+        border-radius: 10px;
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+        
+      }
+
+}
+
+
+
+/* iPad size screen */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #logo {
+        max-width: 4vh;
+        display: flex;
+       
+    }   
+
+    .featured-games img {
+        object-fit: cover;
+        width: 30vh;
+        height: 35vh;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+
+    .featured-games {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 10vh;
+        
+    }  
+
+    
+    
+    .game_card{
+        padding: 12px;
+        width: 30vh;
+        margin:30px; 
+        border-radius: 10px;
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+      }
+
+
+      #partner-container {
+        padding: 0px;
+        width: 100vh;
+        height: 50vh;
+        border-radius: 1em;
+        position: relative;
+        
+    }
+    
+    
+    #my-partner img {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        margin: 0;
+        width: 50vh;
+        height: 40vh;
+        border-radius: 1em;
+        border: 1em solid rgb(40, 42, 46);
+
+    }
+
+    .overlay {
+        position: absolute;
+        padding: 0;
+        top: 0%;
+        bottom: 0;
+        left: 0%;
+        right: 0;
+        margin: 0;
+        height: 42vh;
+        width: 52vh;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgb(40, 42, 46);
+        }
+        
+        #partner-container:hover .overlay {
+            opacity: 75%;
+          }
+        
+        .text a {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            opacity: 75%;
+            font-family: 'Dosis', sans-serif;
+            font-weight: 700;
+            font-size: 3em;
+            text-decoration: none;
+        
+          }
+}

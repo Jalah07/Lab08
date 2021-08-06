@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+    <h1>User Reviews</h1>
+    <div class="featured_reviews">
+
+        <div class="review_card">
+            <p class="username">M3</p>
+            <div class="square_rating"><p class="rating">100</p></div>
+            <p class="game">Cyberpunk 2077</p>
+            <p class="review">Cyberpunk 2077 is an engaging experience unlike anything else. The open world mechanics are top notch and there is almost always something to do on the map. Furthermore, we have a large number of different game paths to choose from, all of which give you a very own experience of the story. Combined with the hundreds of weapons, augmentations, upgrades and side missions, there is plenty of material that will last over a long period of time. Cyberpunk 2077 will definitely be remembered as one of the most significant titles in the history of gaming media.</p>
+        </div>
+
+        <div class="review_card">
+            <p class="username">COGconnected</p>
+            <div class="square_rating"><p class="rating">92</p></div>
+            <p class="game">Marvel's Spider-Man: Miles Morales</p>
+            <p class="review">Though it’s not as polished as the 2018 original, Spider-Man Miles Morales is a smashing success. It looks sensational and is an absolute riot to play. Miles’ story brings all the drama and feels it needs to and highlights a community outside what’d normally be on the drawing board for a game like this. Despite some bugginess, this is the game you want to show off your impressive new hardware. I can guarantee I’ll be slinging from Harlem to Hell’s Kitchen daily for the foreseeable future.</p>
+        </div>
+
+        <div class="review_card">
+            <p class="username">CGMagazine</p>
+            <div class="square_rating"><p class="rating">70</p></div>
+            <p class="game">GTA V</p>
+            <p class="review">If GTAV was more fully devoted to being either a comedy or a drama, its narrative may have been more successful. As it is, the most fun to be had in the game comes almost entirely from the moments when the player breaks away from the mission structure and enjoys the world without worrying about the context of its plot.</p>
+        </div>
+
+
+    
+
+
+
+    <div class="review_card">
+    <form id="form">
+        <h2>Please leave a review for your favorite games!</h2>
+        Enter username: <input type="text" id ="user_username" >
+        <br>
+        Enter rating: <input type="number" id ="user_rating">
+        <br>
+        Enter the game: <input type="text" id ="user_game">
+        <br>
+        Enter your review:<textarea name="user_review" id="user_review" cols="30" rows="15"></textarea>
+       
+        <input type="button" onclick="showReview()" value="Submit" id="submit-btn"/>
+        
+    </form>
+        <p><span id="display_username"></span></p>
+        <p><span class="square_rating" id="display_rating"></span></p> 
+        <p><span id="display_game"></span></p>
+        <p><span id ="display_review"></span> </p>
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -25,14 +25,22 @@ $(document).ready(function(){
     });
 }); 
 
-// User Input #2 Changes the Background color of the webpage. Requires user to put in a input.
-function changeBackgroundColor () {
-    do {
-        color = prompt("Please choose a color for the background.");
-    }
-    while (color === "" || color === null);
-    document.body.style.backgroundColor = color;
-}
+// User Input #2 Changes the Background color of the webpage. Requires user to put in a vaild input of any of the 140 colors the browser recognizes. Does it on load.
+
+window.addEventListener("load", function changeBackgroundColor()  {
+     
+        const validColors =["AliceBlue","AntiqueWhite","Aqua","Aquamarine","Azure","Beige","Bisque","Black","BlanchedAlmond","Blue","BlueViolet","Brown","BurlyWood","CadetBlue","Chartreuse","Chocolate","Coral","CornflowerBlue","Cornsilk","Crimson","Cyan","DarkBlue","DarkCyan","DarkGoldenRod","DarkGray","DarkGrey","DarkGreen","DarkKhaki","DarkMagenta","DarkOliveGreen","DarkOrange","DarkOrchid","DarkRed","DarkSalmon","DarkSeaGreen","DarkSlateBlue","DarkSlateGray","DarkSlateGrey","DarkTurquoise","DarkViolet","DeepPink","DeepSkyBlue","DimGray","DimGrey","DodgerBlue","FireBrick","FloralWhite","ForestGreen","Fuchsia","Gainsboro","GhostWhite","Gold","GoldenRod","Gray","Grey","Green","GreenYellow","HoneyDew","HotPink","IndianRed","Indigo","Ivory","Khaki","Lavender","LavenderBlush","LawnGreen","LemonChiffon","LightBlue","LightCoral","LightCyan","LightGoldenRodYellow","LightGray","LightGrey","LightGreen","LightPink","LightSalmon","LightSeaGreen","LightSkyBlue","LightSlateGray","LightSlateGrey","LightSteelBlue","LightYellow","Lime","LimeGreen","Linen","Magenta","Maroon","MediumAquaMarine","MediumBlue","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","MediumSpringGreen","MediumTurquoise","MediumVioletRed","MidnightBlue","MintCream","MistyRose","Moccasin","NavajoWhite","Navy","OldLace","Olive","OliveDrab","Orange","OrangeRed","Orchid","PaleGoldenRod","PaleGreen","PaleTurquoise","PaleVioletRed","PapayaWhip","PeachPuff","Peru","Pink","Plum","PowderBlue","Purple","RebeccaPurple","Red","RosyBrown","RoyalBlue","SaddleBrown","Salmon","SandyBrown","SeaGreen","SeaShell","Sienna","Silver","SkyBlue","SlateBlue","SlateGray","SlateGrey","Snow","SpringGreen","SteelBlue","Tan","Teal","Thistle","Tomato","Turquoise","Violet","Wheat","White","WhiteSmoke","Yellow","YellowGreen",];
+
+        do {
+            color = prompt("Please choose a color for the background. Make sure you enter a vaild CSS color. It's case-sentitive.");
+        }
+        while(validColors.includes(color) !== true);
+        document.body.style.backgroundColor = color;
+    
+
+});
+
+
 
 // Reset Button for the background color
 document.getElementById("reset-color").addEventListener("click", function() {
@@ -50,8 +58,9 @@ document.getElementById("reset-color").addEventListener("click", function() {
     }
   })  
 
-function displayPokemon() {
-    const container = document.querySelector('#container');
+
+document.getElementById("pokemon-heading").addEventListener("click", function displayPokemon() {
+    const container = document.querySelector('#pokemon-container');
     const baseURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
   
     let pokemonNum = prompt("How many pokemon do you want to see?");
@@ -68,9 +77,12 @@ function displayPokemon() {
         pokemon.appendChild(newImg);
         pokemon.appendChild(label);
         container.appendChild(pokemon);
-  }    
+    
    
 }
+})
+
+   
 
 
 

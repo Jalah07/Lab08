@@ -183,8 +183,8 @@ h2 {
 .button_container a:hover {
     background-color: #fd0010;
 }
-/* Review */
 
+/* Review */
 
 h1 {
     font-family: 'Dosis', sans-serif;
@@ -259,9 +259,11 @@ form {
     font-weight: 700;
 }
 
+/* Pokemon */
 #pokemon-heading {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
+    align-content: center;
+    
 }
 
 #pokemon-heading h1 {
@@ -273,6 +275,7 @@ form {
 #pokemon-logo {
     width: 2em;
     height: 2em;
+    
     
 }
 

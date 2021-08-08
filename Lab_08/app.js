@@ -1,4 +1,4 @@
-/* // User Input #1 Takes user input in the form of a review.
+// User Input #1 Takes user input in the form of a review.
 
 
 document.getElementById("form").addEventListener("click", function showReview() {
@@ -85,7 +85,7 @@ document.getElementById("pokemon-heading").addEventListener("click", function di
    
 }
 })
- */
+
    
 
 

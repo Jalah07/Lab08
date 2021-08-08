@@ -1,5 +1,7 @@
-// User Input #1 Takes user input in the form of a review.
- function showReview () {
+/* // User Input #1 Takes user input in the form of a review.
+
+
+document.getElementById("form").addEventListener("click", function showReview() {
     let review = document.getElementById("user_review").value;
     let username = document.getElementById("user_username").value;
     let rating = document.getElementById("user_rating").value;
@@ -9,9 +11,11 @@
     display_rating.innerHTML = rating;
     display_review.innerHTML = review;
     display_game.innerHTML = game;
-     
-    
-}
+
+
+});
+
+
         
 
 // JQuery in order to hide the form after submit and to hide/show the display rating
@@ -81,7 +85,7 @@ document.getElementById("pokemon-heading").addEventListener("click", function di
    
 }
 })
-
+ */
    
 
 

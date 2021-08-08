@@ -34,20 +34,28 @@ body {
    
 }
 
+
+#parent {
+
+    
+}
+
 #partner-container {
     padding: 12px;
     width: 100vh;
     height: 50vh;
     border-radius: 1em;
     position: relative;
+    align-self: center;
+    justify-content: center;
     
 }
-
+/*  transform: translate(-50%, -50%);justify-self: center;top: 8%;
+    left: 50%*/
 
 #my-partner img {
     position: absolute;
-    top: 8%;
-    left: 50%;
+    justify-content: center;
     margin: 0;
     width: 100vh;
     height: 50vh;

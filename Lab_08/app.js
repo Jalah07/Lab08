@@ -1,6 +1,4 @@
 // User Input #1 Takes user input in the form of a review.
-
-
 document.getElementById("form").addEventListener("click", function showReview() {
     let review = document.getElementById("user_review").value;
     let username = document.getElementById("user_username").value;
@@ -14,12 +12,10 @@ document.getElementById("form").addEventListener("click", function showReview() 
 
 
 });
-
-
-        
+       
 
 // JQuery in order to hide the form after submit and to hide/show the display rating
- $("#display_rating").hide();
+$("#display_rating").hide();
 
 $(document).ready(function(){
     $("#submit-btn").click(function hideForm(){
@@ -30,7 +26,6 @@ $(document).ready(function(){
 }); 
 
 // User Input #2 Changes the Background color of the webpage. Requires user to put in a vaild input of any of the 140 colors the browser recognizes. Does it on load.
-
 window.addEventListener("load", function changeBackgroundColor()  {
      
         const validColors =["AliceBlue","AntiqueWhite","Aqua","Aquamarine","Azure","Beige","Bisque","Black","BlanchedAlmond","Blue","BlueViolet","Brown","BurlyWood","CadetBlue","Chartreuse","Chocolate","Coral","CornflowerBlue","Cornsilk","Crimson","Cyan","DarkBlue","DarkCyan","DarkGoldenRod","DarkGray","DarkGrey","DarkGreen","DarkKhaki","DarkMagenta","DarkOliveGreen","DarkOrange","DarkOrchid","DarkRed","DarkSalmon","DarkSeaGreen","DarkSlateBlue","DarkSlateGray","DarkSlateGrey","DarkTurquoise","DarkViolet","DeepPink","DeepSkyBlue","DimGray","DimGrey","DodgerBlue","FireBrick","FloralWhite","ForestGreen","Fuchsia","Gainsboro","GhostWhite","Gold","GoldenRod","Gray","Grey","Green","GreenYellow","HoneyDew","HotPink","IndianRed","Indigo","Ivory","Khaki","Lavender","LavenderBlush","LawnGreen","LemonChiffon","LightBlue","LightCoral","LightCyan","LightGoldenRodYellow","LightGray","LightGrey","LightGreen","LightPink","LightSalmon","LightSeaGreen","LightSkyBlue","LightSlateGray","LightSlateGrey","LightSteelBlue","LightYellow","Lime","LimeGreen","Linen","Magenta","Maroon","MediumAquaMarine","MediumBlue","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","MediumSpringGreen","MediumTurquoise","MediumVioletRed","MidnightBlue","MintCream","MistyRose","Moccasin","NavajoWhite","Navy","OldLace","Olive","OliveDrab","Orange","OrangeRed","Orchid","PaleGoldenRod","PaleGreen","PaleTurquoise","PaleVioletRed","PapayaWhip","PeachPuff","Peru","Pink","Plum","PowderBlue","Purple","RebeccaPurple","Red","RosyBrown","RoyalBlue","SaddleBrown","Salmon","SandyBrown","SeaGreen","SeaShell","Sienna","Silver","SkyBlue","SlateBlue","SlateGray","SlateGrey","Snow","SpringGreen","SteelBlue","Tan","Teal","Thistle","Tomato","Turquoise","Violet","Wheat","White","WhiteSmoke","Yellow","YellowGreen",];
@@ -42,13 +37,13 @@ window.addEventListener("load", function changeBackgroundColor()  {
         document.body.style.backgroundColor = color;
     
 
-});
-
+}); 
 
 
 // Reset Button for the background color
 document.getElementById("reset-color").addEventListener("click", function() {
     document.body.style.backgroundColor = "#0f0f0f";
+
   });
 
 
@@ -63,6 +58,7 @@ document.getElementById("reset-color").addEventListener("click", function() {
   })  
 
 
+// User Input #4 Displays Pokemon when clicked and asks for an user input. 
 document.getElementById("pokemon-heading").addEventListener("click", function displayPokemon() {
     const container = document.querySelector('#pokemon-container');
     const baseURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'

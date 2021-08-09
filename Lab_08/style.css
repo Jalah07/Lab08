@@ -5,7 +5,7 @@ body {
 
 
 #logo {
-    max-width: 5vh;
+    max-width: 6vh;
     display: flex;
    
 }
@@ -21,7 +21,7 @@ body {
 
 
 .img-logo h1 {
-    font-size: 30px;
+    font-size: 45px;
     padding-left: 10px;
     font-family: 'Dosis', sans-serif;
     color: #fc6f58;
@@ -35,10 +35,7 @@ body {
 }
 
 
-#parent {
 
-    
-}
 
 #partner-container {
     padding: 12px;
@@ -50,8 +47,6 @@ body {
     justify-content: center;
     
 }
-/*  transform: translate(-50%, -50%);justify-self: center;top: 8%;
-    left: 50%*/
 
 #my-partner img {
     position: absolute;
@@ -67,13 +62,13 @@ body {
 .overlay {
     position: absolute;
     padding: 0;
-    top: 10%;
+    top: 8%;
     bottom: 0;
-    left: 51%;
+    left: 2%;
     right: 0;
     margin: 0;
     height: 51vh;
-    width: 101vh;
+    width: 103vh;
     opacity: 0;
     transition: .5s ease;
     background-color: rgb(40, 42, 46);
@@ -302,15 +297,47 @@ form {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    .nav-logo h1 {
+        font-size: 2em;
+    }
+
     #logo {
         max-width: 4vh;
         display: flex;
        
     }
 
+    #reset-container {
+        padding-bottom: 20px;
+    }
+
+    #reset-color {
+        display:inline-block;
+        justify-content: center;
+        padding:0;
+        border:0.1em solid #FF3D49;;
+        margin-left: 30px;
+        border-radius:0.12em;
+        box-sizing: border-box;
+        text-decoration:none;
+        font-family:'Dosis', sans-serif;
+        font-weight:600;
+        font-size: 0.8em;
+        color:#FF3D49;;
+        text-align:center;
+        transition: all 0.2s; 
+        width:  2.5em;
+        height: 2.5em;
+    }
+    
+    #reset-color:hover{
+        color:#fd0010;
+        background-color:#d3d3d3;
+        }
+
     #partner-container {
         padding: 0px;
-        width: 100vh;
+        width: 90vh;
         height: 50vh;
         border-radius: 1em;
         position: relative;
@@ -323,7 +350,7 @@ form {
         top: 0%;
         left: 0%;
         margin: 0;
-        width: 70vh;
+        width: 50vh;
         height: 40vh;
         border-radius: 1em;
         border: 1em solid rgb(40, 42, 46);
@@ -339,7 +366,7 @@ form {
         right: 0;
         margin: 0;
         height: 43vh;
-        width: 73vh;
+        width: 53vh;
         opacity: 0;
         transition: .5s ease;
         background-color: rgb(40, 42, 46);
@@ -367,11 +394,10 @@ form {
         
           }
     
- 
 
     .featured-games img {
         object-fit: cover;
-        width: 40vh;
+        width: 50vh;
         height: 35vh;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -380,18 +406,18 @@ form {
 
     .featured-games {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         flex-wrap: wrap;
         align-content: center;
-
-
+        justify-content: flex-start;                                        
         
     }  
     
     .game_card{
         padding: 0;
-        width: 60vh;
-        margin:20px; 
+        max-width: 50vh;
+        margin-left:20px; 
+        margin-right: 20px;
         border-radius: 10px;
         box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
         
@@ -411,6 +437,10 @@ form {
         display: flex;
        
     }   
+
+    #reset-container {
+        padding-bottom: 20px;
+    }
 
     .featured-games img {
         object-fit: cover;
@@ -454,7 +484,7 @@ form {
         top: 0%;
         left: 0%;
         margin: 0;
-        width: 50vh;
+        width: 70vh;
         height: 40vh;
         border-radius: 1em;
         border: 1em solid rgb(40, 42, 46);
